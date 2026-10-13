@@ -783,3 +783,57 @@
 {"_e":"metro:config","_t":1791890549253,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
 {"_e":"expo:dev-tools-plugin:load","_t":1791890549337,"plugins":[]}
 {"_e":"metro:instantiate","_t":1791890549493,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1791932955289,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791932955290,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791932955291,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791932955731,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../src/app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791932955897,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791932956021,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791932956343,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1791932996741,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791932996741,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1791932996742,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1791932997162,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../src/app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1791932997316,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":true,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1791932997403,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791932997568,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1791933009817,"id":"2","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1791933009817,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791933009820,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791933009920,"id":"2","progress":0.21816203492015104,"total":486,"current":227}
+{"_e":"metro:bundling:progress","_t":1791933010020,"id":"2","progress":0.5871965128453014,"total":967,"current":741}
+{"_e":"metro:bundling:progress","_t":1791933010120,"id":"2","progress":0.9299015609503931,"total":1261,"current":1216}
+{"_e":"metro:bundling:failed","_t":1791933010132,"id":"2","message":"Unable to resolve \"../assets/dp.png\" from \"src/app/(tabs)/profile.tsx\"\n   8 |       {/*profile image*/}\n   9 |       <View style={styles.ProfileImageContainer}>\n> 10 |         <Image source={require(\"../assets/dp.png\")} />\n     |                                 ^\n  11 |       </View>\n  12 |       <Text>profile</Text>\n  13 |     </View>","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/app/(tabs)/profile.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../assets/dp.png\"\u001b[39m\n\n\u001b[90m \u001b[39msrc/app\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../assets/dp.png","originModulePath":"src/app/(tabs)/profile.tsx"}
+{"_e":"metro:bundling:started","_t":1791933069437,"id":"4","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1791933069437,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791933069440,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791933069540,"id":"4","progress":0.33480799487209373,"total":655,"current":379}
+{"_e":"metro:bundling:progress","_t":1791933069640,"id":"4","progress":0.8914344717232909,"total":1164,"current":1099}
+{"_e":"metro:bundling:failed","_t":1791933069674,"id":"4","message":"Unable to resolve \"../assets/dp.png\" from \"src/app/(tabs)/profile.tsx\"\n   8 |       {/*profile image*/}\n   9 |       <View style={styles.ProfileImageContainer}>\n> 10 |         <Image source={require(\"../assets/dp.png\")} />\n     |                                 ^\n  11 |       </View>\n  12 |       <Text>profile</Text>\n  13 |     </View>","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/app/(tabs)/profile.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../assets/dp.png\"\u001b[39m\n\n\u001b[90m \u001b[39msrc/app\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../assets/dp.png","originModulePath":"src/app/(tabs)/profile.tsx"}
+{"_e":"metro:bundling:started","_t":1791933147716,"id":"5","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1791933147716,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791933147718,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1791933147818,"id":"5","progress":0.25094607294856724,"total":529,"current":265}
+{"_e":"metro:bundling:progress","_t":1791933147918,"id":"5","progress":0.6888327951613695,"total":988,"current":820}
+{"_e":"metro:bundling:progress","_t":1791933148018,"id":"5","progress":0.9984561947496311,"total":1295,"current":1294}
+{"_e":"metro:bundling:progress","_t":1791933148181,"id":"5","progress":0.999,"total":1295,"current":1295}
+{"_e":"metro:bundling:done","_t":1791933148233,"id":"5","total":1295,"ms":516.873167}
+{"_e":"metro:client_log","_t":1791933148424,"level":"warn","data":["No native ExponentConstants module found, are you sure the expo-constants's module is linked properly?"]}
+{"_e":"metro:client_log","_t":1791933148425,"level":"error","data":["[runtime not ready]: Error: Cannot find native module 'ExpoAsset'"]}
+{"_e":"metro:client_log","_t":1791933148426,"level":"error","data":["[runtime not ready]: Error: Cannot find native module 'ExpoAsset'"]}
+{"_e":"metro:client_log","_t":1791933148426,"level":"error","data":["[runtime not ready]: Invariant Violation: \"main\" has not been registered. This can happen if:\n* Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.\n* A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called."]}
+{"_e":"metro:client_log","_t":1791933149719,"level":"error","data":["[runtime not ready]: Error: Non-js exception: AppRegistryBinding::stopSurface failed. Global was not installed."]}
+{"_e":"metro:bundling:started","_t":1791933149785,"id":"6","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1791933149785,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791933149822,"id":"6","total":1,"ms":37.420416}
+{"_e":"metro:bundling:started","_t":1791933170404,"id":"8","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1791933170404,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791933170450,"id":"8","total":1,"ms":46.358917}
+{"_e":"metro:client_log","_t":1791933177339,"level":"warn","data":["No native ExponentConstants module found, are you sure the expo-constants's module is linked properly?"]}
+{"_e":"metro:client_log","_t":1791933177339,"level":"error","data":["[runtime not ready]: Error: Cannot find native module 'ExpoAsset'"]}
+{"_e":"metro:client_log","_t":1791933177339,"level":"error","data":["[runtime not ready]: Error: Cannot find native module 'ExpoAsset'"]}
+{"_e":"metro:client_log","_t":1791933177345,"level":"error","data":["[runtime not ready]: Invariant Violation: \"main\" has not been registered. This can happen if:\n* Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.\n* A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called."]}
+{"_e":"metro:bundling:started","_t":1791933183693,"id":"9","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1791933183693,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791933183740,"id":"9","total":1,"ms":47.693708}
+{"_e":"metro:client_log","_t":1791933183914,"level":"error","data":["[runtime not ready]: Error: Non-js exception: AppRegistryBinding::stopSurface failed. Global was not installed."]}
