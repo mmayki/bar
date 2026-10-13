@@ -732,3 +732,12 @@
 {"_e":"metro:bundling:progress","_t":1791443376354,"id":"1","progress":0.9984478077620462,"total":1288,"current":1287}
 {"_e":"metro:bundling:progress","_t":1791443376456,"id":"1","progress":0.999,"total":1288,"current":1288}
 {"_e":"metro:bundling:done","_t":1791443376513,"id":"1","total":1288,"ms":662.433667}
+{"_e":"metro:bundling:started","_t":1791444152245,"id":"2","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1791444152246,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791444152318,"id":"2","total":1,"ms":72.350958}
+{"_e":"metro:bundling:started","_t":1791444812675,"id":"4","platform":"ios","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1791444812675,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1791444812723,"id":"4","total":1,"ms":47.585542}
+{"_e":"metro:server_log","_t":1791444890635,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone","60"]}
+{"_e":"metro:server_log","_t":1791445900277,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
+{"_e":"metro:server_log","_t":1791446437932,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone 17 Pro","60"]}
