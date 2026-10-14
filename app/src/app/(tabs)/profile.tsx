@@ -6,10 +6,13 @@ const profile = () => {
   return (
     <View style={styles.container}>
       {/*profile image*/}
-      <View style={styles.ProfileImageContainer}>
-        <Image source={require("../../assets/dp.png")} />
+      <View style={styles.profileImageContainer}>
+        <Image
+          source={require("../../assets/dp.png")}
+          style={styles.ProfileImage}
+        />
       </View>
-      <Text>profile</Text>
+      <Text>Name</Text>
     </View>
   );
 };
@@ -21,8 +24,14 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: spacing.md,
   },
-  ProfileImageContainer: {
-    alignSelf: "center",
-    marginBottom: spacing.sm,
+  profileImageContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: spacing.md,
+  },
+  ProfileImage: {
+    width: 140,
+    height: 140,
+    borderRadius: 100,
   },
 });
