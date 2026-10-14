@@ -12,7 +12,7 @@ const profile = () => {
           style={styles.ProfileImage}
         />
       </View>
-      <Text>Name</Text>
+      <Text>3213212</Text>
     </View>
   );
 };
