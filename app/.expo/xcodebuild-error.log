@@ -1,0 +1,7 @@
+** BUILD FAILED **
+
+
+The following build commands failed:
+	PhaseScriptExecution [CP]\ Check\ Pods\ Manifest.lock /Users/sardaanaslepcova/Library/Developer/Xcode/DerivedData/bar-hfwvmanfkrwnxndlivxwqipuahon/Build/Intermediates.noindex/bar.build/Debug-iphonesimulator/bar.build/Script-08A4A3CD28434E44B6B9DE2E.sh (in target 'bar' from project 'bar')
+	Building project bar with scheme bar and configuration Debug
+(2 failures)

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "bar",
+    "name": "Ленский след",
     "slug": "bar",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,7 +8,8 @@
     "scheme": "bar",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.sardaana.bar"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +25,6 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      
       "expo-router",
       [
         "expo-splash-screen",

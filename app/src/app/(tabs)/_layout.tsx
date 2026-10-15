@@ -8,7 +8,15 @@ export default function TabLayout() {
     <>
       <Tabs
         screenOptions={{
-          tabBarActiveTintColor: "#a187d7",
+          tabBarActiveTintColor: "#d9a4ff",
+          headerStyle: {
+            backgroundColor: "#282b28",
+          },
+          headerShadowVisible: false,
+          headerTintColor: "#fff",
+          tabBarStyle: {
+            backgroundColor: "#282b28",
+          },
         }}
       >
         <Tabs.Screen
@@ -57,17 +65,3 @@ export default function TabLayout() {
     </>
   );
 }
-
-<Tabs
-  screenOptions={{
-    tabBarActiveTintColor: "#7841e7",
-    headerStyle: {
-      backgroundColor: "#3e7ecc",
-    },
-    headerShadowVisible: false,
-    headerTintColor: "#ceb745",
-    tabBarStyle: {
-      backgroundColor: "#9b5b49",
-    },
-  }}
-></Tabs>;

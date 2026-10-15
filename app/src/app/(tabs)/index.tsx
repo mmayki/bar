@@ -1,31 +1,49 @@
-import { Text, View, StyleSheet } from "react-native";
-import { Link } from "expo-router";
-import { Stack } from 'expo-router';
+import React from "react";
+import {
+  StyleSheet,
+  Pressable,
+  Image,
+  ImageBackground,
+  View,
+} from "react-native";
 
-export default function Index() {
+const ImageButton = () => {
+  const handlePress = () => {
+    console.log("Кнопка нажата!");
+  };
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Home screen</Text>
-      <Link href="/camera" style={styles.button}>
-        Go to About Screeeeeewwwn
-      </Link>
-    </View>
+    <Pressable
+      onPress={handlePress}
+      style={({ pressed }) => [{ opacity: pressed ? 0.7 : 1.0 }]}
+    >
+      <Image
+        source={require("../assets/Rectangle111141437.png")}
+        style={styles.image}
+      />
+    </Pressable>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  container: {
+  image: {
+    width: 400,
+    height: 100,
+    resizeMode: "contain",
+  },
+  background: {
+    flex: 1, // растянуть на весь экран
+    width: "100%",
+  },
+  content: {
     flex: 1,
-    backgroundColor: "#25292e",
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
   },
-  text: {
+  title: {
     color: "#fff",
-  },
-  button: {
-    fontSize: 20,
-    textDecorationLine: "underline",
-    color: "#fff",
+    fontSize: 24,
   },
 });
+
+export default ImageButton;
