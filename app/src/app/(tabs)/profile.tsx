@@ -8,6 +8,7 @@ import {
   StyleSheet,
   ScrollView,
   Alert,
+  ImageBackground,
 } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 
@@ -20,6 +21,8 @@ import ac6 from "../../app/assets/achievements/ac6.png";
 import ac7 from "../../app/assets/achievements/ac7.png";
 import ac8 from "../../app/assets/achievements/ac8.png";
 import locked from "../../app/assets/achievements/locked.png";
+
+import background from "../../app/assets/bg/ivan-chai-bg.png";
 
 export default function ProfileScreen() {
   const [avatar, setAvatar] = useState(null);
@@ -78,92 +81,107 @@ export default function ProfileScreen() {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Pressable onPress={pickImage} style={styles.avatarWrapper}>
-        {avatar ? (
-          <Image source={{ uri: avatar }} style={styles.avatar} />
-        ) : (
-          <View style={[styles.avatar, styles.avatarPlaceholder]}>
-            <Text style={styles.avatarPlaceholderText}>+</Text>
-          </View>
-        )}
-        <View style={styles.cameraBadge}>
-          <Text style={styles.cameraBadgeText}>📷</Text>
-        </View>
-      </Pressable>
-
-      <Text style={styles.hint}>Нажми на аватар, чтобы сменить</Text>
-
-      <View style={styles.nickBlock}>
-        {isEditing ? (
-          <>
-            <TextInput
-              value={draftNick}
-              onChangeText={setDraftNick}
-              style={styles.input}
-              placeholder="Введи ник"
-              autoFocus
-              maxLength={20}
-            />
-            <View style={styles.editRow}>
-              <Pressable
-                onPress={saveNickname}
-                style={[styles.smallBtn, styles.saveBtn]}
-              >
-                <Text style={styles.smallBtnText}>Сохранить</Text>
-              </Pressable>
-              <Pressable
-                onPress={cancelEditing}
-                style={[styles.smallBtn, styles.cancelBtn]}
-              >
-                <Text style={styles.smallBtnText}>Отмена</Text>
-              </Pressable>
+    <ImageBackground
+      source={background}
+      style={styles.background}
+      resizeMode="cover"
+    >
+      <ScrollView
+        contentContainerStyle={styles.container}
+        showsVerticalScrollIndicator={false}
+      >
+        <Pressable onPress={pickImage} style={styles.avatarWrapper}>
+          {avatar ? (
+            <Image source={{ uri: avatar }} style={styles.avatar} />
+          ) : (
+            <View style={[styles.avatar, styles.avatarPlaceholder]}>
+              <Text style={styles.avatarPlaceholderText}>+</Text>
             </View>
-          </>
-        ) : (
-          <>
-            <Text style={styles.nickname}>{nickname}</Text>
-            <Pressable
-              onPress={() => setIsEditing(true)}
-              style={styles.editBtn}
-            >
-              <Text style={styles.editBtnText}>Изменить ник</Text>
-            </Pressable>
-          </>
-        )}
-      </View>
+          )}
+          <View style={styles.cameraBadge}>
+            <Text style={styles.cameraBadgeText}>📷</Text>
+          </View>
+        </Pressable>
 
-      <Text style={styles.sectionTitle}>Достижения</Text>
-      <View style={styles.achievementsGrid}>
-        {achievements.map((item) => (
-          <View
-            key={item.id}
-            style={[
-              styles.achievement,
-              !item.unlocked && styles.achievementLocked,
-            ]}
-          >
-            <Image source={item.icon} style={styles.achievementIcon} />
-            <Text
+        <Text style={styles.hint}>Нажми на аватар, чтобы сменить</Text>
+
+        <View style={styles.nickBlock}>
+          {isEditing ? (
+            <>
+              <TextInput
+                value={draftNick}
+                onChangeText={setDraftNick}
+                style={styles.input}
+                placeholder="Введи ник"
+                autoFocus
+                maxLength={20}
+              />
+              <View style={styles.editRow}>
+                <Pressable
+                  onPress={saveNickname}
+                  style={[styles.smallBtn, styles.saveBtn]}
+                >
+                  <Text style={styles.smallBtnText}>Сохранить</Text>
+                </Pressable>
+                <Pressable
+                  onPress={cancelEditing}
+                  style={[styles.smallBtn, styles.cancelBtn]}
+                >
+                  <Text style={styles.smallBtnText}>Отмена</Text>
+                </Pressable>
+              </View>
+            </>
+          ) : (
+            <>
+              <Text style={styles.nickname}>{nickname}</Text>
+              <Pressable
+                onPress={() => setIsEditing(true)}
+                style={styles.editBtn}
+              >
+                <Text style={styles.editBtnText}>Изменить ник</Text>
+              </Pressable>
+            </>
+          )}
+        </View>
+
+        <Text style={styles.sectionTitle}>Достижения</Text>
+        <View style={styles.achievementsGrid}>
+          {achievements.map((item) => (
+            <View
+              key={item.id}
               style={[
-                styles.achievementTitle,
-                !item.unlocked && styles.achievementTitleLocked,
+                styles.achievement,
+                !item.unlocked && styles.achievementLocked,
               ]}
             >
-              {item.title}
-            </Text>
-          </View>
-        ))}
-      </View>
-    </ScrollView>
+              <Image source={item.icon} style={styles.achievementIcon} />
+              <Text
+                style={[
+                  styles.achievementTitle,
+                  !item.unlocked && styles.achievementTitleLocked,
+                ]}
+              >
+                {item.title}
+              </Text>
+            </View>
+          ))}
+        </View>
+      </ScrollView>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    backgroundColor: "#12351D",
+  },
+
   container: {
     padding: 24,
+    paddingTop: 40,
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "rgba(10, 35, 18, 0.30)",
     flexGrow: 1,
   },
 
@@ -218,7 +236,7 @@ const styles = StyleSheet.create({
   nickname: {
     fontSize: 24,
     fontWeight: "700",
-    color: "#2D3436",
+    color: "#fff",
   },
   editBtn: {
     marginTop: 8,
@@ -280,13 +298,13 @@ const styles = StyleSheet.create({
   achievement: {
     width: "30%",
     aspectRatio: 1,
-    backgroundColor: "#F8F7FF",
+    backgroundColor: "rgba(235, 248, 231, 0.92)",
     borderRadius: 14,
     justifyContent: "center",
     alignItems: "center",
     padding: 8,
     borderWidth: 1,
-    borderColor: "#E8E6FF",
+    borderColor: "#A7C99A",
   },
   achievementLocked: {
     backgroundColor: "#F5F5F5",
